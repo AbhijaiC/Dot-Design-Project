@@ -1,6 +1,6 @@
 .head{
     background-color: purple;
-    color:white;
+    color:whitesmoke;
     border-radius: 12px;
 }
 
@@ -9,7 +9,7 @@ input{
     width: 12%;
     height: auto;
     background-color: plum;
-    font-family: Cooper;
+    font-family: Broadway;
     color: purple;
 }
 
@@ -18,10 +18,28 @@ button{
     background-color: plum;
     width: 100px;
     height: 40px;
-    font-family: Cooper;
+    font-family: Broadway;
     color: purple;
 }
 body{
-    font-family: Cooper;
+    font-family: Broadway;
     font-weight: bolder;
+}
+
+::-webkit-scrollbar{
+    border-radius: 14px;
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 14px;
+    background-color: plum;
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: purple;
+    border-radius: 50px;
+    width:10px;
 }
