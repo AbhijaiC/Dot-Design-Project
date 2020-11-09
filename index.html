@@ -1,7 +1,9 @@
 <html>
-	<head>
-		<title>Augmented Reality</title>
-		<!--<h1 color="Blue">Augmented Reality</h1>-->
+
+<head>
+	<title>Augmented Reality</title>
+	<!--<h1 color="Blue">Augmented Reality</h1>-->
+	<link href="style.css" rel="stylesheet">
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
@@ -23,29 +25,35 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 	</script>
-<script src = "Script.js"></script>
-	</head>
-	<body bgcolor="blue" text="yellow">
-		<div>
+
+	<script src="Script.js"></script>
+
+</head>
+
+<body background="Images/Stars GIF.gif">
+	<hr color="purple" size=5>
+	<div class="head">
 		<p align="center">
-		<font size=7>
-			Augmented Reality<br>
-			- Abhijai and Sabeer
-		</font>
-		</p></div>
-		<hr color="red" size=5>
-
-		<img src="">
-
-		<hr color="red" size=5>
-	</body>
-
-	<div >
-		<input id = "comment">
-		<button onclick="comment();">Post comment</button>
-		<button onclick="displayComment();">Refresh comment</button>
-		<ul id = "list"></ul>
+			<font size=7>
+				Augmented Reality<br>
+				The <font color="gold">Future</font> Of Tommorow
+			</font>
+		</p>
 	</div>
+	<hr color="purple" size=5>
+
+	<img src="">
+
+
+</body>
+
+<div class="head" style="height: auto; width: 40%;">
+	<textarea id="comment" name="message" rows="5" cols="70"
+		placeholder="Type a message ... Chat with your friends ..."></textarea>
+	<button onclick="comment();">Post comment</button>
+	<button onclick="displayComment();">Refresh comment</button>
+	<ul id="list"></ul>
+</div>
 
 
 
