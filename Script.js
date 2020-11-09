@@ -1,4 +1,3 @@
-
 // DOT DESIGN PROJECT - Sabeer and Abhijai
 /* 
 PUT IN THE HTML DOCUMENT
@@ -80,8 +79,17 @@ function displayComment() {
         list.appendChild(li)
         li.innerHTML = objectOfPrintChat[element]
 
+        if(element == objectOfPrintChat.length - 1){
+            li.innerHTML = objectOfPrintChat[element]
+            li.style.color = "gold"
+        }
+        else{
+            li.style.color = "white"
+        }
+
     }
     list.appendChild(dummyLi)
+    window.scrollBy(0,100)
 }
 
 
