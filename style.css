@@ -1,0 +1,27 @@
+.head{
+    background-color: purple;
+    color:white;
+    border-radius: 12px;
+}
+
+input{
+    border-radius: 12px;
+    width: 12%;
+    height: auto;
+    background-color: plum;
+    font-family: Cooper;
+    color: purple;
+}
+
+button{
+    border-radius: 8px;
+    background-color: plum;
+    width: 100px;
+    height: 40px;
+    font-family: Cooper;
+    color: purple;
+}
+body{
+    font-family: Cooper;
+    font-weight: bolder;
+}
