@@ -1,46 +1,16 @@
-// DOT DESIGN PROJECT - Sabeer and Abhijai
-/* 
-PUT IN THE HTML DOCUMENT
-1.
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCkwxNQEKUkkojfHkt02qFjCG0D0pwFNjY",
-    authDomain: "augmentedreality-2aec3.firebaseapp.com",
-    databaseURL: "https://augmentedreality-2aec3.firebaseio.com",
-    projectId: "augmentedreality-2aec3",
-    storageBucket: "augmentedreality-2aec3.appspot.com",
-    messagingSenderId: "237969527396",
-    appId: "1:237969527396:web:67b3e191c16952943ac571"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-
-<script src = "Script.js"></script>
-
-2.
-<input id = "comment">
-<button onclick="comment();">Post comment</button>
-<button onclick="displayComment();">Refresh comment</button>
-<ul id = "list"></ul>
-
-*/
-
 database = firebase.database()
 var dataBaseCount = 0
 var x = 0
-
-var reference = database.ref('comments/')
+var valueOfLatest, objectOfPrintChatAll,list;
+var list = document.getElementById('list')
+getCount()
+var reference = database.ref('comments/' + String(dataBaseCount))
 reference.on("value", function (y) {
-    objectOfPrintChat = y.val()
+    valueOfLatest = y.val()
+})
+var referenceAll = database.ref('comments/')
+referenceAll.on("value", function (a) {
+    objectOfPrintChatAll = a.val()
 })
 
 function getCount() {
@@ -48,12 +18,20 @@ function getCount() {
     ref.on("value", function (x) {
         dataBaseCount = x.val();
     })
-    var reference = database.ref('comments/')
+    var reference = database.ref('comments/' + String(dataBaseCount))
     reference.on("value", function (y) {
-        objectOfPrintChat = y.val()
+        valueOfLatest = y.val()
     })
+    var referenceAll = database.ref('comments/')
+    referenceAll.on("value", function (a) {
+        objectOfPrintChatAll = a.val()
+        //console.log(objectOfPrintChatAll)
+    
+    })
+    var list = document.getElementById('list')
 }
 getCount()
+
 function updateCount(updateCount) {
     ref = database.ref('/')
     ref.update({
@@ -61,43 +39,53 @@ function updateCount(updateCount) {
 
     })
 }
+
 getCount()
 
 getCount()
-function displayComment() {
-    var reference = database.ref('comments/')
+function displayLastComment() {
+    getCount()
+    var list = document.getElementById('list')
+    var reference = database.ref('comments/' + String(dataBaseCount))
     reference.on("value", function (y) {
-        objectOfPrintChat = y.val()
+        valueOfLatest = y.val()
     })
-//    dummyLi = document.createElement('li') 
-//    dummyLi.innerHTML = "<b>Next >>><b>"
 
-	var chat_data = document.getElementById("Chat")
-	document.getElementById("Chat").value = ""
-	var data_fill = ""
-	for (element in objectOfPrintChat) {
-		data_fill = data_fill + objectOfPrintChat[element] + "\n"
-	}
-	document.getElementById("Chat").value = data_fill 
-/*        var li = document.createElement('li')
-        list.appendChild(li)
-        li.innerHTML = objectOfPrintChat[element]
+    var li = document.createElement('li')
+    li.innerHTML = valueOfLatest;
+    list.appendChild(li);
 
-        if(element == objectOfPrintChat.length - 1){
-            li.innerHTML = objectOfPrintChat[element]
-            li.style.color = "gold"
-        }
-        else{
-            li.style.color = "white"
-        }
+    window.scrollBy(0, 100)
+    //console.log(dataBaseButtonCount)
 
-    }
-    list.appendChild(dummyLi)*/
-    window.scrollBy(0,100)
 }
 
 
+function displayAllComments() {
+    if (document.getElementById('list').childElementCount != dataBaseCount) {
+        var list = document.getElementById('list')
+        var referenceAll = database.ref('comments/')
+        referenceAll.on("value", function (a) {
+            objectOfPrintChatAll = a.val()
+        })
 
+        for (element in objectOfPrintChatAll) {
+            var li = document.createElement('li')
+            li.innerHTML = objectOfPrintChatAll[element]
+            list.appendChild(li)
+            li.style.color = "gold"
+            console.log(objectOfPrintChatAll[element])
+            console.log(objectOfPrintChatAll.length)
+
+
+        }
+    }
+    else {
+        alert('Nothing new to display')
+    }
+    //var resetButton = document.getElementById('reset')
+    window.scrollBy(0, 100)
+}
 
 
 
@@ -113,7 +101,7 @@ function comment() {
     var fireRef = database.ref('comments/')
     fireRef.update(json)
     var i = dataBaseCount;
-    displayComment()
+    displayLastComment()
 }
 
 function namePrompt() {
@@ -133,8 +121,3 @@ function color(idNumber) {
     var idObject = document.getElementById(id)
     idObject.style.color = ""
 }
-
-
-
-
-
