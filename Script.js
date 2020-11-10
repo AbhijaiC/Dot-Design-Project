@@ -69,13 +69,17 @@ function displayComment() {
     reference.on("value", function (y) {
         objectOfPrintChat = y.val()
     })
-    dummyLi = document.createElement('li')
-    dummyLi.innerHTML = "<b>Next >>><b>"
+//    dummyLi = document.createElement('li')
+//    dummyLi.innerHTML = "<b>Next >>><b>"
 
-
-
-    for (element in objectOfPrintChat) {
-        var li = document.createElement('li')
+	var chat_data = document.getElementById("Chat")
+	document.getElementById("Chat").value = ""
+	var data_fill = ""
+	for (element in objectOfPrintChat) {
+		data_fill = data_fill + objectOfPrintChat[element] + "\n"
+	}
+	document.getElementById("Chat").value = data_fill 
+/*        var li = document.createElement('li')
         list.appendChild(li)
         li.innerHTML = objectOfPrintChat[element]
 
@@ -88,7 +92,7 @@ function displayComment() {
         }
 
     }
-    list.appendChild(dummyLi)
+    list.appendChild(dummyLi)*/
     window.scrollBy(0,100)
 }
 
