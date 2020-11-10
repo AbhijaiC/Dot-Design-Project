@@ -1,0 +1,45 @@
+function displayComment() {
+    var reference = database.ref('comments/')
+    reference.on("value", function (y) {
+        objectOfPrintChat = y.val()
+    })
+//    dummyLi = document.createElement('li') 
+//    dummyLi.innerHTML = "<b>Next >>><b>"
+
+	var chat_data = document.getElementById("Chat")
+	document.getElementById("Chat").value = ""
+	var data_fill = ""
+	for (element in objectOfPrintChat) {
+		data_fill = data_fill + objectOfPrintChat[element] + "\n"
+	}
+	document.getElementById("Chat").value = data_fill 
+/*        var li = document.createElement('li')
+        list.appendChild(li)
+        li.innerHTML = objectOfPrintChat[element]
+
+        if(element == objectOfPrintChat.length - 1){
+            li.innerHTML = objectOfPrintChat[element]
+            li.style.color = "gold"
+        }
+function comment() {
+    getCount()
+    getCount()
+    var commentValue = document.getElementById('comment').value
+
+    updateCount(dataBaseCount + 1)
+    var json = {}
+    json[dataBaseCount] = commentValue
+    var fireRef = database.ref('comments/')
+    fireRef.update(json)
+    var i = dataBaseCount;
+    displayComment()
+}
+
+        else{
+            li.style.color = "white"
+        }
+
+    }
+    list.appendChild(dummyLi)*/
+    window.scrollBy(0,100)
+}
