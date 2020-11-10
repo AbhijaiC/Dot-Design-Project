@@ -69,7 +69,7 @@ function displayComment() {
     reference.on("value", function (y) {
         objectOfPrintChat = y.val()
     })
-//    dummyLi = document.createElement('li')
+//    dummyLi = document.createElement('li') 
 //    dummyLi.innerHTML = "<b>Next >>><b>"
 
 	var chat_data = document.getElementById("Chat")
