@@ -43,3 +43,16 @@ body{
     border-radius: 50px;
     width:10px;
 }
+textarea{
+    background-color: plum;
+    color: purple;
+}
+
+.subnavbtn{
+    float: left;
+}
+
+A{
+    color: purple;
+    text-decoration: none;
+}
