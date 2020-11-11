@@ -59,3 +59,15 @@ A{
 h2{
     color: gold;
 }
+.USA{
+    float: left;
+    transform: rotate(30deg);
+    color: red;
+    background-size: 40px 20px;
+    height: auto;
+    background-color: lightblue;
+}
+.Covid{
+    float: left;
+    transform: rotate(-30deg);
+}
