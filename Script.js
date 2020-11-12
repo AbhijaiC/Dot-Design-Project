@@ -41,10 +41,15 @@ function displayComment() {
 	document.getElementById("Chat").value = ""
 	var data_fill = ""
 	for (element in objectOfPrintChat) {
-		data_fill = data_fill + objectOfPrintChat[element] + "\n"
+		if (objectOfPrintChat[element] == ""){
+			//alert("Please write a comment.")
+		}else{
+			data_fill = data_fill + objectOfPrintChat[element] + "\n"
+		}
 	}
 	document.getElementById("Chat").value = data_fill 
-    window.scrollBy(0,100)
+	document.getElementById("comment").value = ""
+	window.scrollBy(0,100)
 }
 
 
