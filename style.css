@@ -71,3 +71,8 @@ h2{
     float: left;
     transform: rotate(-30deg);
 }
+img{
+    border-radius: 14px;
+}
+
+
