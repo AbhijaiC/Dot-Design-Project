@@ -9,7 +9,7 @@ input{
     width: 12%;
     height: auto;
     background-color: plum;
-    font-family:  'Constantia';;
+    font-family:  'Lucida Sans Typewriter';;
     color: purple;
     font-weight: 900;
 }
@@ -19,12 +19,12 @@ button{
     background-color: plum;
     width: 100px;
     height: 40px;
-    font-family:  'Constantia';;
+    font-family:  'Lucida Sans Typewriter';;
     color: purple;
     font-weight: 900;
 }
 body{
-    font-family: 'Constantia';
+    font-family: 'Lucida Sans Typewriter';
     font-weight: 900;
 }
 
@@ -81,7 +81,7 @@ h2{
 }
 
 img{
-    border-radius: 14px;
+    border-radius: 20px;
 }
 .subnavsticky{
     position: sticky; 
@@ -100,5 +100,10 @@ img{
 }
 
 .top{
-    font-family: Broadway;
+    font-family: Lucida Sans Typewriter;
+    font-weight: bolder;
+}
+.bloc{
+    width:30px;
+    height: 30px;
 }
