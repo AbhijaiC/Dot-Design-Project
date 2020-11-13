@@ -9,8 +9,9 @@ input{
     width: 12%;
     height: auto;
     background-color: plum;
-    font-family: Broadway;
+    font-family:  'Constantia';;
     color: purple;
+    font-weight: 900;
 }
 
 button{
@@ -18,12 +19,13 @@ button{
     background-color: plum;
     width: 100px;
     height: 40px;
-    font-family: Broadway;
+    font-family:  'Constantia';;
     color: purple;
+    font-weight: 900;
 }
 body{
-    font-family: Broadway;
-    font-weight: bolder;
+    font-family: 'Constantia';
+    font-weight: 900;
 }
 
 ::-webkit-scrollbar{
@@ -36,6 +38,10 @@ body{
     background-color: plum;
     width:10px;
 
+}
+::-webkit-scrollbar-button{
+    background-color: purple;
+    border-radius: 200px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -50,6 +56,11 @@ textarea{
 
 .subnavbtn{
     float: left;
+    top: 0 ;
+}
+.Covid{
+    float: right;
+    transform: rotate(-30deg);
 }
 
 A{
@@ -60,19 +71,34 @@ h2{
     color: gold;
 }
 .USA{
-    float: left;
-    transform: rotate(30deg);
+    float: right;
     color: red;
     background-size: 40px 20px;
     height: auto;
     background-color: plum;
+    top: 0;
+
 }
-.Covid{
-    float: left;
-    transform: rotate(-30deg);
-}
+
 img{
     border-radius: 14px;
 }
+.subnavsticky{
+    position: sticky; 
+    top:0
+}
+.bd0{
+    border-radius: 0px;
+    border-width: 40px;
+}
 
+#colorThisMedia{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
 
+.top{
+    font-family: Broadway;
+}
