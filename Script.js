@@ -89,6 +89,9 @@ function color(idNumber) {
     var idObject = document.getElementById(id)
     idObject.style.backgroundColor = "gold"
 }
+function topScroll(){
+    window.scrollTo(0,0)
+}
 
 
 
