@@ -1,0 +1,217 @@
+<html>
+
+<head>
+    <title>Augmented Reality</title>
+    <!--<h1 color="Blue">Augmented Reality</h1>-->
+    <link href="style.css" rel="stylesheet">
+    <link href="Images/Star.png" rel="shortcut icon">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCkwxNQEKUkkojfHkt02qFjCG0D0pwFNjY",
+            authDomain: "augmentedreality-2aec3.firebaseapp.com",
+            databaseURL: "https://augmentedreality-2aec3.firebaseio.com",
+            projectId: "augmentedreality-2aec3",
+            storageBucket: "augmentedreality-2aec3.appspot.com",
+            messagingSenderId: "237969527396",
+            appId: "1:237969527396:web:67b3e191c16952943ac571"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="Script.js"></script>
+
+</head>
+
+<body background="Images/Stars GIF.gif">
+    <hr color="purple" size=5>
+    <div class="head top" style="background-color: rgb(114, 12, 114); ">
+        <h1>
+            <div>
+                <p align="center">
+                    <b>
+                        <font size=7 face="Lucida Sans Typewriter">
+                            Augmented Reality<br>
+                            The <font color="gold">Future</font> Of Tommorow
+                            
+                        </font>
+                        <center><h3>Demerits</h3></center>
+                    </b>
+                </p>
+            </div>
+        </h1>
+        <p align="center">Made with ♥ for all curious kids.</p>
+    </div>
+
+    <div class="navbar subnavsticky">
+        <div class="subnav">
+            <button class="subnavbtn" id="tab7" onmouseover="color(7)"
+                onmouseout="document.getElementById('tab7').style.backgroundColor = 'plum'">
+                <a href=index.html>Home🏡</a>
+            </button>
+        </div>
+
+        <div class="subnav">
+            <button class="subnavbtn" id="tab8" onmouseover="color(8)"
+                onmouseout="document.getElementById('tab8').style.backgroundColor = 'plum'">
+                <a href = aboutUs.htm>About us 👋🏻</a>
+            </button>
+        </div>
+
+        <div class="subnav">
+            <button class="subnavbtn" id="tab1" onmouseover="color(1)"
+                onmouseout="document.getElementById('tab1').style.backgroundColor = 'plum'">
+                What is AR? 😕
+            </button>
+        </div>
+
+        <div class="subnav">
+            <button class="subnavbtn" id="tab2" onmouseover="color(2)"
+                onmouseout="document.getElementById('tab2').style.backgroundColor = 'plum'">
+                How does AR work?
+            </button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn" id="tab3" onmouseover="color(3)"
+                onmouseout="document.getElementById('tab3').style.backgroundColor = 'plum'">
+                AR in use 👾
+            </button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn" id="tab4" onmouseover="color(4)"
+                onmouseout="document.getElementById('tab4').style.backgroundColor = 'plum'">
+               <a href = "demerits.htm">Demerits 👎🏻</a>
+            </button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn" id="tab5" onmouseover="color(5)"
+                onmouseout="document.getElementById('tab5').style.backgroundColor = 'plum'">
+                Contact us 📞
+            </button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn" id="tab6" onmouseover="color(6)"
+                onmouseout="document.getElementById('tab6').style.backgroundColor = 'plum'">
+                Feedback 😊😟
+            </button>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+<hr color="purple" size=5>
+<div class="subnav">
+    <button class="subnavbtn  USA" id="tab10" onmouseover="color(10)"
+        onmouseout="document.getElementById('tab10').style.backgroundColor = 'plum'">
+        <a href="https://www.google.com/search?q=us+election+results&oq=us+election+results&aqs=chrome.0.69i59j0i131i433l4j69i61j69i60l2.2651j0j7&sourceid=chrome&ie=UTF-8"
+            target="_blank">
+            <font><b>USA</b></font>
+            <font><b>Election</b> </font>
+            <font><b>results 💲</b></font>
+        </a>
+    </button>
+</div>
+<br><br>
+<div class="subnav Covid">
+    <button class="subnavbtn" id="tab9" onmouseover="color(9)"
+        onmouseout="document.getElementById('tab9').style.backgroundColor = 'plum'">
+        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">Covid 19</a>
+        🦠
+    </button>
+</div>
+
+<br><br><br><br>
+<div style="background-color: plum">
+    <div class="head" style="height: auto; width: 34%; float: right;">
+        <center>
+            <img src="Images/Demerits.gif" width="510" height="450" align="right">
+
+            <br><br><br><br><br><br><br><br>
+            <textarea id="comment" name="message" rows="5" cols="70"
+                placeholder="Type a message ... Chat with your friends ..."></textarea>
+            <button onclick="comment();">Post comment</button>
+            <button onclick="displayComment();">Refresh comment</button>
+            <textarea placeholder="Chats display here..." id="Chat" readonly="True" rows="5" cols="60"></textarea>
+        </center>
+    </div>
+
+
+
+
+    <div class="head">
+        <h3>
+            <font size="7">"</font>
+            <font color="gold">It does not do to live on dreams, and forget to live</font>
+            - <font color="goldenrod">JK Rowling</font>
+            <img src="Images/JK Rowling.jpg" align="center">
+        </h3>
+    </div>
+    <br><br><br><br><br>
+    <div class="head" style="color: whitesmoke;">
+        <ul type="square">
+            <li>AR has one major drawback, it discourages social interaction and can be very bad for kids, a<br>recent
+                example is <font color="gold">"Pokemon GO"</font>. Kids were <u>SO</u> addicted to it that some even
+                jumped
+                of roofs to catch pokemons. This is very sadening 😟</li><br>
+            <li>While AR is a very huge industry, it can also destroy other industries and make <font color="gold">
+                    millions
+                    unemployed</font>.</li><br>
+            <li>Some AR related games inculcate values of <font color = "gold">agression and fighting</font>, insted of brotherhood and friendship
+                (There are many shooting games) </li><br>
+            <li>AR and VR can have a very detremental impact on <font color = "gold">eyesight</font></li><br>
+        </ul>
+    </div>
+    <center>
+</div>
+
+<br><br>
+<button class="toTop" onclick="topScroll()">Move <br>up</button>
+<br><br><br><br><br><br>
+<div class="head" style="height: 100px;">
+
+
+    <div id="colorThisMedia" style="float: right;"></div><br><br><br>&nbsp;
+    <div style="background-color: white; width: 12.5%; float:right;">
+
+        <center>
+            &nbsp;
+            <a href="https://www.facebook.com/" target="_blank"><img src="Images/Facebook.png" align=center width=20
+                    height=20 class="bd0" id="bd1"
+                    onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'blue'"
+                    onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+            &nbsp;
+            <a href="https://www.instagram.com/" target="_blank"><img src="Images/Instagram.png" align=center width=20
+                    height=20 class="bd0" id="bd2"
+                    onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'orangered'"
+                    onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+            &nbsp;
+            <a href="https://twitter.com/login" target="_blank"><img src="Images/Twitter.png" align=center width=20
+                    height=20 class="bd0" id="bd3"
+                    onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'lightblue'"
+                    onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+            &nbsp;
+            <a href="https://www.linkedin.com/home" target="_blank"><img src="Images/Linkedin.png" align=center width=20
+                    height=20 class="bd0" id="bd4"
+                    onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'cyan'"
+                    onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+    </div>
+
+    </center>
+    © Abhijai & Sabeer
+</div>
+
+</div>
+
+
+</html>
