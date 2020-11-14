@@ -4,7 +4,7 @@
 	<title>Augmented Reality</title>
 	<!--<h1 color="Blue">Augmented Reality</h1>-->
 	<link href="style.css" rel="stylesheet">
-	<link href = "Images/Star.png" rel = "shortcut icon">
+	<link href="Images/Star.png" rel="shortcut icon">
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
@@ -33,34 +33,196 @@
 
 <body background="Images/Stars GIF.gif">
 	<hr color="purple" size=5>
-	<div class="head">
-		<p align="center">
-			<font size=7>
-				Augmented Reality<br>
-				The <font color="gold">Future</font> Of Tommorow
-			</font>
-		</p>
+	<div class="head top" style="background-color: rgb(114, 12, 114); ">
+		<h1>
+			<div>
+				<p align="center">
+					<b>
+						<font size=7 face="Lucida Sans Typewriter">
+							Augmented Reality<br>
+							The <font color="gold">Future</font> Of Tommorow
+
+						</font>
+					</b>
+				</p>
+			</div>
+		</h1>
+		<p align="center">Made with ♥ for all curious kids.</p>
 	</div>
-	<hr color="purple" size=5>
+
+	<div class="navbar subnavsticky">
+		<div class="subnav">
+			<button class="subnavbtn" id="tab7" onmouseover="color(7)"
+				onmouseout="document.getElementById('tab7').style.backgroundColor = 'plum'">
+				<a href=index.html>Home🏡</a>
+			</button>
+		</div>
+
+		<div class="subnav">
+			<button class="subnavbtn" id="tab8" onmouseover="color(8)"
+				onmouseout="document.getElementById('tab8').style.backgroundColor = 'plum'">
+				<a href=aboutUs.htm>About us 👋🏻</a>
+			</button>
+		</div>
+
+		<div class="subnav">
+			<button class="subnavbtn" id="tab1" onmouseover="color(1)"
+				onmouseout="document.getElementById('tab1').style.backgroundColor = 'plum'">
+				What is AR? 😕
+			</button>
+		</div>
+
+		<div class="subnav">
+			<button class="subnavbtn" id="tab2" onmouseover="color(2)"
+				onmouseout="document.getElementById('tab2').style.backgroundColor = 'plum'">
+				How does AR work?
+			</button>
+		</div>
+		<div class="subnav">
+			<button class="subnavbtn" id="tab3" onmouseover="color(3)"
+				onmouseout="document.getElementById('tab3').style.backgroundColor = 'plum'">
+				AR in use 👾
+			</button>
+		</div>
+		<div class="subnav">
+			<button class="subnavbtn" id="tab4" onmouseover="color(4)"
+				onmouseout="document.getElementById('tab4').style.backgroundColor = 'plum'">
+				<a href="demerits.htm">Demerits 👎🏻</a>
+			</button>
+		</div>
+		<div class="subnav">
+			<button class="subnavbtn" id="tab5" onmouseover="color(5)"
+				onmouseout="document.getElementById('tab5').style.backgroundColor = 'plum'">
+				Contact us 📞
+			</button>
+		</div>
+		<div class="subnav">
+			<button class="subnavbtn" id="tab6" onmouseover="color(6)"
+				onmouseout="document.getElementById('tab6').style.backgroundColor = 'plum'">
+				Feedback 😊😟
+			</button>
+		</div>
+
+	</div>
+
 
 
 </body>
 
-<div class="head" style="height: auto; width: 40%; float: right;">
-	<center>
-		<img src="Images/Augmented Reality GIF Education.gif" width="580" height="450" align="right">
+<hr color="purple" size=5>
+<div class="subnav">
+	<button class="subnavbtn  USA" id="tab10" onmouseover="color(10)"
+		onmouseout="document.getElementById('tab10').style.backgroundColor = 'plum'">
+		<a href="https://www.google.com/search?q=us+election+results&oq=us+election+results&aqs=chrome.0.69i59j0i131i433l4j69i61j69i60l2.2651j0j7&sourceid=chrome&ie=UTF-8"
+			target="_blank">
+			<font><b>USA</b></font>
+			<font><b>Election</b> </font>
+			<font><b>results 💲</b></font>
+		</a>
+	</button>
+</div>
+<br><br>
+<div class="subnav Covid">
+	<button class="subnavbtn" id="tab9" onmouseover="color(9)"
+		onmouseout="document.getElementById('tab9').style.backgroundColor = 'plum'">
+		<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">Covid 19</a>
+		🦠
+	</button>
+</div>
 
-		<br><br><br><br><br><br><br><br>
-		<textarea id="comment" name="message" rows="5" cols="70"
-			placeholder="Type a message ... Chat with your friends ..."></textarea>
-		<button onclick="comment();">Post comment</button>
-		<button onclick="displayAllComments();" id = "reset">Refresh comment</button>
-		<ul id="list"></ul>
-	</center>
+<br><br><br><br>
+<div style="background-color: plum">
+	<div class="head" style="height: auto; width: 48%; float: right;">
+		<center>
+			<img src="Images/Augmented Reality GIF Education.gif" width="510" height="450" align="center">
+
+			<br><br><br><br><br><br><br><br>
+			<textarea id="comment" name="message" rows="5" cols="70"
+				placeholder="Type a message ... Chat with your friends ..."></textarea><br>
+			<center> <button onclick="comment();">Post comment</button>
+				<button onclick="displayComment();">Refresh comment</button></center>
+			<textarea placeholder="Chats display here..." id="Chat" readonly="True" rows="5" cols="60"></textarea>
+		</center><br><br>
+		<div style="float: right;"><img src="Images/Augmented reality Maps.gif" width=440 height="320"
+				style="float: right;"></div>
+
+	</div>
+
+
+
+
+
+
+	<div class="head" style="width: 48%;">
+		<font color="gold">
+			<font size="7">"</font>I do think that a significant portion of the population of developed countries, and
+			eventually all countries,
+			will have AR experiences every day, almost like eating three meals a day. It will become that much a part of
+			you.” <font color="goldenrod">—Tim Cook</font>
+		</font> <br><br><br><br><br><br>
+		<img src="Images/Tim Cook.jpg" align="center" width=440 height="320">
+	</div>
+
+	<br><br>
+
+	<div class="head" style=" width: 48%; color: whitesmoke;">
+		Augmented Reality, as the name suggests, is adding to Reality. For Augmented Reality,
+		technology is used to
+		superimpose information, across multiple sensory modalities like visual, auditory, haptic, somatosensory and
+		olfactory— sounds, images and text — on the world we see.<br><br><br>
+		In his book, ‘Understanding Augmented Reality’, Alan B. Craig introduces the idea that AR is a medium.
+		Although it is a medium, technology is required to carry it out. In much the same way that technology is
+		required for other media, such as movies, AR also utilizes technology to carry out the ideas represented in the
+		medium. It is important to learn about the medium first and foremost and then the technology.
+	</div>
+
+
+
+
+	<div class="head" style="width: 48%; height: auto;">
+		<h2>Video on AR</h2>
+		<iframe width="400" height="320" src="https://www.youtube.com/embed/f9MwaH6oGEY" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+	</div>
+
 </div>
 <br><br><br><br><br><br>
+<br><br>
+<button class="toTop" onclick="topScroll()">Move <br>up</button>
+<div class="head" style="height: 100px;">
 
 
+	<div id="colorThisMedia" style="float: right;"></div><br><br><br>&nbsp;
+	<div style="background-color: white; width: 12.5%; float:right;">
+
+		<center>
+			&nbsp;
+			<a href="https://www.facebook.com/" target="_blank"><img src="Images/Facebook.png" align=center width=20
+					height=20 class="bd0" id="bd1"
+					onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'blue'"
+					onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+			&nbsp;
+			<a href="https://www.instagram.com/" target="_blank"><img src="Images/Instagram.png" align=center width=20
+					height=20 class="bd0" id="bd2"
+					onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'orangered'"
+					onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+			&nbsp;
+			<a href="https://twitter.com/login" target="_blank"><img src="Images/Twitter.png" align=center width=20
+					height=20 class="bd0" id="bd3"
+					onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'lightblue'"
+					onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+			&nbsp;
+			<a href="https://www.linkedin.com/home" target="_blank"><img src="Images/Linkedin.png" align=center width=20
+					height=20 class="bd0" id="bd4"
+					onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'cyan'"
+					onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+	</div>
+	</center>
+	© Abhijai & Sabeer
+</div>
+
+</div>
 
 
 </html>

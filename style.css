@@ -9,8 +9,9 @@ input{
     width: 12%;
     height: auto;
     background-color: plum;
-    font-family: Broadway;
+    font-family:  'Lucida Sans Typewriter';;
     color: purple;
+    font-weight: 900;
 }
 
 button{
@@ -18,12 +19,13 @@ button{
     background-color: plum;
     width: 100px;
     height: 40px;
-    font-family: Broadway;
+    font-family:  'Lucida Sans Typewriter';;
     color: purple;
+    font-weight: 900;
 }
 body{
-    font-family: Broadway;
-    font-weight: bolder;
+    font-family: 'Lucida Sans Typewriter';
+    font-weight: 900;
 }
 
 ::-webkit-scrollbar{
@@ -37,9 +39,78 @@ body{
     width:10px;
 
 }
+::-webkit-scrollbar-button{
+    background-color: purple;
+    border-radius: 200px;
+}
 
 ::-webkit-scrollbar-thumb{
     background-color: purple;
     border-radius: 50px;
     width:10px;
+}
+textarea{
+    background-color: plum;
+    color: purple;
+}
+
+.subnavbtn{
+    float: left;
+    top: 0 ;
+}
+.Covid{
+    float: right;
+    transform: rotate(-30deg);
+}
+
+A{
+    color: purple;
+    text-decoration: none;
+}
+h2{
+    color: gold;
+}
+.USA{
+    float: right;
+    color: red;
+    background-size: 40px 20px;
+    height: auto;
+    background-color: plum;
+    top: 0;
+
+}
+
+img{
+    border-radius: 20px;
+}
+.subnavsticky{
+    position: sticky; 
+    top:0
+}
+.bd0{
+    border-radius: 0px;
+    border-width: 40px;
+}
+
+#colorThisMedia{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.top{
+    font-family: Lucida Sans Typewriter;
+    font-weight: bolder;
+}
+.bloc{
+    width:30px;
+    height: 30px;
+}
+.toTop{
+    background-color: gold;
+    position: sticky;
+    bottom: 0;
+    float: right;
+
 }
