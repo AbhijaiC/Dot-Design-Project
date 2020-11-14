@@ -1,0 +1,235 @@
+<html>
+
+<head>
+    <title>What is AR</title>
+    <!--<h1 color="Blue">Augmented Reality</h1>-->
+    <link href="style.css" rel="stylesheet">
+    <link href="Images/Star.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCkwxNQEKUkkojfHkt02qFjCG0D0pwFNjY",
+            authDomain: "augmentedreality-2aec3.firebaseapp.com",
+            databaseURL: "https://augmentedreality-2aec3.firebaseio.com",
+            projectId: "augmentedreality-2aec3",
+            storageBucket: "augmentedreality-2aec3.appspot.com",
+            messagingSenderId: "237969527396",
+            appId: "1:237969527396:web:67b3e191c16952943ac571"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="Script.js"></script>
+
+</head>
+
+<body background="Images/Stars GIF.gif">
+    <hr color="purple" size=5>
+    <div class="head top" style="background-color: rgb(114, 12, 114); ">
+        <h1>
+            <div>
+                <p align="center">
+                    <b>
+                        <font size=7 face="Lucida Sans Typewriter">
+                            Augmented Reality<br>
+                            The <font color="gold">Future</font> Of Tommorow
+
+                        </font>
+                        <center>
+                            <h3>What is AR?</h3>
+                        </center>
+                    </b>
+                </p>
+            </div>
+        </h1>
+        <p align="center">Made with ♥ for all curious kids.</p>
+    </div>
+
+    <div class="navbar subnavsticky">
+		<div class="subnav">
+			<button class="subnavbtn" id="tab7" onmouseover="color(7)"
+				onmouseout="document.getElementById('tab7').style.backgroundColor = 'plum'">
+				<a href=index.html>Home🏡</a>
+			</button>
+		</div>
+
+		<div class="subnav">
+			<button class="subnavbtn" id="tab8" onmouseover="color(8)"
+				onmouseout="document.getElementById('tab8').style.backgroundColor = 'plum'">
+				<a href = aboutUs.htm>About us 👋🏻</a>
+			</button>
+		</div>
+
+		<div class="subnav">
+			<button class="subnavbtn" id="tab1" onmouseover="color(1)"
+				onmouseout="document.getElementById('tab1').style.backgroundColor = 'plum'">
+				<a href = What_is_AR.htm>What is AR? 😕</a>
+			</button>
+		</div>
+
+		<div class="subnav">
+			<button class="subnavbtn" id="tab2" onmouseover="color(2)"
+				onmouseout="document.getElementById('tab2').style.backgroundColor = 'plum'">
+				<a href = AR_Working.htm >How does AR work?</a>
+			</button>
+		</div>
+		<div class="subnav">
+			<button class="subnavbtn" id="tab3" onmouseover="color(3)"
+				onmouseout="document.getElementById('tab3').style.backgroundColor = 'plum'">
+				<a href = AR_in_use.html>AR in use 👾</a>
+			</button>
+		</div>
+		<div class="subnav">
+			<button class="subnavbtn" id="tab4" onmouseover="color(4)"
+				onmouseout="document.getElementById('tab4').style.backgroundColor = 'plum'">
+				<a href="demerits.htm">Demerits 👎🏻</a>
+			</button>
+		</div>
+		<div class="subnav">
+			<button class="subnavbtn" id="tab5" onmouseover="color(5)"
+				onmouseout="document.getElementById('tab5').style.backgroundColor = 'plum'">
+				<a href = "Contact_Us.htm">Contact us 📞</a>
+			</button>
+		</div>
+		<div class="subnav">
+			<button class="subnavbtn" id="tab6" onmouseover="color(6)"
+				onmouseout="document.getElementById('tab6').style.backgroundColor = 'plum'">
+				<a href = "Feedback.htm">Feedback 😊😟</a>
+			</button>
+		</div>
+
+	</div>
+
+
+</body>
+
+<hr color="purple" size=5>
+<div class="subnav">
+    <button class="subnavbtn  USA" id="tab10" onmouseover="color(10)"
+        onmouseout="document.getElementById('tab10').style.backgroundColor = 'plum'">
+        <a href="https://www.google.com/search?q=us+election+results&oq=us+election+results&aqs=chrome.0.69i59j0i131i433l4j69i61j69i60l2.2651j0j7&sourceid=chrome&ie=UTF-8"
+            target="_blank">
+            <font><b>USA</b></font>
+            <font><b>Election</b> </font>
+            <font><b>results 💲</b></font>
+        </a>
+    </button>
+</div>
+<br><br>
+<div class="subnav Covid">
+    <button class="subnavbtn" id="tab9" onmouseover="color(9)"
+        onmouseout="document.getElementById('tab9').style.backgroundColor = 'plum'">
+        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">Covid 19</a>
+        🦠
+    </button>
+</div>
+
+<br><br><br><br>
+<div style="background-color: plum">
+    <div class="head" style="height: auto; width: 34%; float: right;">
+        <center>
+            <img src="Images/augmented-reality-illustration.jpg" height=400 width=500>
+            <br><br><br><br><br><br><br><br>
+            <textarea id="comment" name="message" rows="5" cols="70"
+                placeholder="Type a message ... Chat with your friends ..."></textarea>
+            <button onclick="comment();">Post comment</button>
+            <button onclick="displayComment();">Refresh comment</button>
+            <textarea placeholder="Chats display here..." id="Chat" readonly="True" rows="5" cols="60"></textarea>
+        </center>
+    </div>
+
+
+
+
+    <div class="head">
+        <!--    <h3>
+		AR	
+    </h3>  -->
+    </div>
+    <br>
+    <div class="head" style="color: whitesmoke;">
+        Augmented Reality (AR) is an interactive experience of a real-world environment where the objects that reside in
+        the real world are enhanced by computer-generated perceptual information.<br>
+        Origin of AR<br>
+        Augmented reality (AR) <font color = "gold">first surfaced in 1968 when Ivan Sutherland</font>, a computer science professional, made an
+        augmented reality display system.
+        <br><br>
+        AR makes use of existing reality and tangible objects to produce computer-generated augmentations over the user
+        perception of reality in real time.<br><br>
+        For example, Google now allows us to put a 3D model of any animal or other species in our house and we can even
+        take a <b>selfie</b> with it!<br><br>
+        This whole concept is quite fascinating. In their book ‘The Fourth Transformation’ <font color='gold'>Robert
+            Scoble</font> and <font color = "gold">Shel Isreal</font>
+        say that ten years from today, the centre of our digital lives will no longer be the smart phone, but device
+        that looks like ordinary eyeglasses: except those glasses will have settings for Virtual and Augmented Reality.
+        What you really see and what is computer generated will be mixed so tightly together, that we won’t really be
+        able to tell what is real and what is illusion.<br><br>
+        Instead of touching and sliding on a mobile phone, we will make things happen by moving our eyes or by
+        brainwaves. When we talk with someone or play an online game, we will see that person in the same room with us.
+        We will be able to touch and feel her or him through haptic technology. They say that we won’t need to search
+        online with words, because there will be a new Visual Web <font color = "gold">100 times larger</font> than the current Internet, and we
+        will find things by images, buy things by brands, or just by looking at a logo on the jacket of a passer-by.
+        Language will be irrelevant, and a merchant in a developing world will have access to global markets.
+        Medical devices will cure schizophrenia, allow quadriplegics to walk. People will be able to touch and feel
+        objects and other people who are not actually there.<br><br>
+        From Kindergarten to on-the-job, learning will become experiential. Children will visit great battlefields and
+        tour historic places in VR rather than read about them in text books. Medical students and surgeons will learn
+        and practice on virtual humans rather than cadavers; oil rig workers will understand how to handle emergencies,
+        before the ever leave the home office.<br><br>
+        In other words, it will be a <font color="gold">whole new world</font>, which sounds promising and fascinating
+        but at the same time very
+        unreal. For the sceptics let us just say that not three decades ago, they could not have imagined a world that
+        we are in today, with no general access to computers, phones and social media. At that time if somebody were
+        to have described these to us it would have sounded even more unreal.<br>
+
+    </div>
+
+    <br><br>
+    <button class="toTop" onclick="topScroll()">Move <br>up</button>
+    <br><br><br><br><br><br>
+    <div class="head" style="height: 100px;">
+
+
+        <div id="colorThisMedia" style="float: right;"></div><br><br><br>&nbsp;
+        <div style="background-color: white; width: 12.5%; float:right;">
+
+            <center>
+                &nbsp;
+                <a href="https://www.facebook.com/" target="_blank"><img src="Images/Facebook.png" align=center width=20
+                        height=20 class="bd0" id="bd1"
+                        onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'blue'"
+                        onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+                &nbsp;
+                <a href="https://www.instagram.com/" target="_blank"><img src="Images/Instagram.png" align=center
+                        width=20 height=20 class="bd0" id="bd2"
+                        onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'orangered'"
+                        onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+                &nbsp;
+                <a href="https://twitter.com/login" target="_blank"><img src="Images/Twitter.png" align=center width=20
+                        height=20 class="bd0" id="bd3"
+                        onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'lightblue'"
+                        onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+                &nbsp;
+                <a href="https://www.linkedin.com/home" target="_blank"><img src="Images/Linkedin.png" align=center
+                        width=20 height=20 class="bd0" id="bd4"
+                        onmouseover="document.getElementById('colorThisMedia').style.backgroundColor = 'cyan'"
+                        onmouseout="document.getElementById('colorThisMedia').style.backgroundColor = 'white'"></a>
+        </div>
+
+        </center>
+        © Abhijai & Sabeer
+    </div>
+
+</div>
+
+
+</html>
