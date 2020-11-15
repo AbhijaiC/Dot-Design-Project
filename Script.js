@@ -128,7 +128,6 @@ function submitFeedback() {
     alert('Your feedback has been recorded by our database.')
 }
 
-
-
-
-
+function Credits() {
+    alert('We have taken some info from the following pages:-\nhttps://www.researchgate.net\nhttps://en.wikipedia.org/wiki/Augmented_reality\nBook:The Fourth Transformation: How Augmented Reality and Artificial Intelligence Change Everything\nhttps://www.blippar.com/blog/2018/08/21/what-is-augmented-reality-and-how-does-augmented-reality-work')
+}
