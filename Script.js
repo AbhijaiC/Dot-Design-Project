@@ -89,7 +89,9 @@ function comment() {
 function namePrompt() {
     var name = window.prompt('Hi! Let us know who you are')
     if (name != null) {
-        document.write('Welcome ' + name + '!')
+        if (name != "") {
+            document.write('Welcome ' + name + '!')
+        }
     }
     else {
         document.write('Welcome ' + 'friend' + '!')

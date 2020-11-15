@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $("#fadeButtonShow").click(function(){
+        $("#ARAbout").fadeIn();
+    });
+});
+$(document).ready(function(){
+    $("#fadeButtonHide").click(function(){
+        $("#ARAbout").fadeOut();
+    });
+});
