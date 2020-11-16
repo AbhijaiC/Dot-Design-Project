@@ -140,17 +140,21 @@
     <div class="head" style="height: auto; width: 34%; float: right;">
         <center>
             <img src="Images/augmented-reality-illustration.jpg" height=400 width=500>
-            <br><br><br><br><br><br><br><br>
+            <br><br>
+	    <button id="fadeButtonShow">Show Chat</button>
+	    <button id="fadeButtonHide">Hide Chat</button>
+	    <hr>
+	    <br>
+	    <div id="chat_system">
             <textarea id="comment" name="message" rows="5" cols="70"
                 placeholder="Type a message ... Chat with your friends ..."></textarea>
             <button onclick="comment();">Post comment</button>
             <button onclick="displayComment();">Refresh comment</button>
             <textarea placeholder="Chats display here..." id="Chat" readonly="True" rows="5" cols="60"></textarea>
+	    </div>
         </center>
     </div>
     <br>
-    <button id="fadeButtonShow">Show</button>
-    <button id="fadeButtonHide">Hide</button>
     <div class="head" style="color: whitesmoke;" id="ARAbout">
         Augmented Reality (AR) is an interactive experience of a real-world environment where the objects that reside in
         the real world are enhanced by computer-generated perceptual information.<br>

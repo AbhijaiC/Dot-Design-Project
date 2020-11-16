@@ -1,10 +1,10 @@
 $(document).ready(function(){
     $("#fadeButtonShow").click(function(){
-        $("#ARAbout").fadeIn();
+        $("#chat_system").fadeIn();
     });
 });
 $(document).ready(function(){
     $("#fadeButtonHide").click(function(){
-        $("#ARAbout").fadeOut();
+        $("#chat_system").fadeOut();
     });
 });

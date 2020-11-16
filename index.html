@@ -146,18 +146,26 @@
 <div style="background-color: plum">
 	<div class="head" style="height: auto; width: 48%; float: right;">
 		<center>
-
-			<img src="Images/Augmented Reality GIF Education.gif" width="510" height="450" align="center">
-
-			<br><br><br><br><br><br><br><br>
-			<textarea id="comment" name="message" rows="5" cols="70"
-				placeholder="Type a message ... Chat with your friends ..."></textarea><br>
-			<center> <button onclick="comment();">Post comment</button>
-				<button onclick="displayComment();">Refresh comment</button></center>
+		<img src="Images/Augmented Reality GIF Education.gif" width="510" height="450" align="center">
+		<br><br>
+		<button id="fadeButtonShow">Show Chat</button>
+		<button id="fadeButtonHide">Hide Chat</button>
+		<hr>
+		<br>
+		<div id="chat_system">
+                <textarea id="comment" name="message" rows="5" cols="70"
+						  placeholder="Type a message ... Chat with your friends ..."></textarea><br>
+			<center>
+			<button onclick="comment();">Post comment</button>
+			<button onclick="displayComment();">Refresh comment</button>
+			</center>
 			<textarea placeholder="Chats display here..." id="Chat" readonly="True" rows="5" cols="60"></textarea>
-		</center><br><br>
+		</div>
+		</center>
+		<br><br>
 		<div style="float: right;"><img src="Images/Augmented reality Maps.gif" width=440 height="320"
 				style="float: right;"></div>
+	</div>
 
 	</div>
 

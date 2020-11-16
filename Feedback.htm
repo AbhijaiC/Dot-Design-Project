@@ -139,14 +139,19 @@
 <div style="background-color: plum">
     <div class="head" style="height: auto; width: 34%; float: right;">
         <center>
-             <img src="Images/Feedback.gif" width="410" height="300" align="right">
-
-            <br><br><br><br><br><br><br><br>
-            <textarea id="comment" name="message" rows="5" cols="70"
-                placeholder="Type a message ... Chat with your friends ..."></textarea>
-            <button onclick="comment();">Post comment</button>
-            <button onclick="displayComment();">Refresh comment</button>
-            <textarea placeholder="Chats display here..." id="Chat" readonly="True" rows="5" cols="60"></textarea>
+             <img src="Images/Feedback.gif" width="410" height="300">
+            <br><br>
+            <button id="fadeButtonShow">Show Chat</button>
+	        <button id="fadeButtonHide">Hide Chat</button>
+	        <hr>
+	        <br>
+	        <div id="chat_system">
+                <textarea id="comment" name="message" rows="5" cols="70"
+                    placeholder="Type a message ... Chat with your friends ..."></textarea>
+                <button onclick="comment();">Post comment</button>
+                <button onclick="displayComment();">Refresh comment</button>
+                <textarea placeholder="Chats display here..." id="Chat" readonly="True" rows="5" cols="60"></textarea>
+	        </div>
         </center>
     </div>
 
@@ -163,7 +168,7 @@
         <br><br>
         <input id="nameFeedback" placeholder="Name">
         <input id="ageFeedback"placeholder = "Age"><br><br>
-        <textarea id="feedback"placeholder = "Feedback" rows = 10 cols = 30></textarea>
+        <textarea id="feedback"placeholder = "Feedback" rows = 10 cols = 30></textarea><br>
         <button onclick="submitFeedback()">Submit</button>
         <br><br><br><br><br><br>
     </div>
