@@ -117,17 +117,23 @@ function submitFeedback() {
     getFCount()
     updateFCount(dataBaseFCount + 1)
     var list = []
-    list.push(document.getElementById('nameFeedback').value)
-    list.push(document.getElementById('ageFeedback').value)
-    list.push(document.getElementById('feedback').value)
-    jsonFeedback = {}
-    jsonFeedback[dataBaseFCount] = list
-    var ref = database.ref('feedback')
-    ref.update(jsonFeedback)
-    document.getElementById('nameFeedback').value = ''
-    document.getElementById('ageFeedback').value = ''
-    document.getElementById('feedback').value = ''
-    alert('Your feedback has been recorded by our database.')
+    if ((document.getElementById('nameFeedback').value != "") && (document.getElementById('ageFeedback').value) && (document.getElementById('feedback').value)) {
+        list.push(document.getElementById('nameFeedback').value)
+        list.push(document.getElementById('ageFeedback').value)
+        list.push(document.getElementById('feedback').value)
+        jsonFeedback = {}
+        jsonFeedback[dataBaseFCount] = list
+        var ref = database.ref('feedback')
+        ref.update(jsonFeedback)
+        document.getElementById('nameFeedback').value = ''
+        document.getElementById('ageFeedback').value = ''
+        document.getElementById('feedback').value = ''
+        alert('Your feedback has been recorded by our database. ✅')
+    }
+    else {
+        alert('Please do not leave any section blank')
+    }
+
 }
 
 function Credits() {
