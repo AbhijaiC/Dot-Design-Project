@@ -91,7 +91,9 @@ function namePrompt() {
     if (name != null) {
         if (name != "") {
             document.write('Welcome ' + name + '!')
-        }
+        }else{
+        	document.write('Welcome ' + 'friend' + '!')
+	    }
     }
     else {
         document.write('Welcome ' + 'friend' + '!')
